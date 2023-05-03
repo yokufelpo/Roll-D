@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Roll's Test</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" ></script>
+</head>
+<body>
+    <main>
+        <div class="cont">   
+            <div class="text-cont">
+                <h1 style="margin-top: 30px;">Dice Rolling</h1>
+            </div>
+            <div class="box-cont">
+                <div class="dice-number">
+                    <button onclick="setRollType(0)" class="roll-type-button">d2</button>
+                    <button onclick="setRollType(1)" class="roll-type-button">d6</button>
+                    <button onclick="setRollType(2)" class="roll-type-button">d8</button>
+                    <button onclick="setRollType(3)" class="roll-type-button">d10</button>
+                    <button onclick="setRollType(4)" class="roll-type-button">d12</button>
+                    <button onclick="setRollType(5)" class="roll-type-button">d20</button>
+                </div>
+                <div class="roll-number">
+                    <img src="https://cdn.onlinewebfonts.com/svg/img_554173.png" class="dice" />
+                    <h1 id="rolled-number">0</h1>
+                </div>
+                <div class="button-cont">
+                    <input class="dice-numbers" type="number" id="dice-numbers" value="1" min="1" max="10" />
+                    <button class="button-style" onclick="roll(0, 10)">Roll</button>
+                </div>
+            </div>
+                 <p id="result-text-fail" class="text-fail"></p><audio id="audio-fail" src="./sounds/baby_cry.mp3"></audio>
+                 <p id="result-text-sucess" class="text-sucess"></p><audio id="audio-sucess" src="./sounds/oh_yeah.mp3"></audio>
+        </div>
+    </main>
+</body>		
+</html>
+

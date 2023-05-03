@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Helvetica', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #A024FA, #4F117A);
+    color: white;
+    box-sizing: border-box;
+    padding: 0;  
+    margin: 0;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.text-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-cont {
+    background-color: #0008;
+    width: 800px;
+    height: 540px;
+    border: 2px solid white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.button-cont {
+    width: 800px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.dice-number {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    font-family: 'Helvetica', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1.4em;
+}
+
+
+.button-style {
+    border-radius: 12px;
+    border: 0;
+    background-image: linear-gradient(to right, #4F117A, #A024FA);
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+}
+
+.roll-type-button{
+    width: 60px;
+    padding: 5px;
+    background-image: linear-gradient(to right, #4F117A, #A024FA);
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    font-size: 0.7em;
+}
+
+.roll-number {
+    text-align: center;
+    font-size: 10em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verde {
+    color: #2EFF09;
+}
+
+.vermelho {
+    color: #FE2001;
+}
+
+.dice{
+    width: 261px;
+    height: 300px;
+    opacity: 0.1;
+    position: absolute;
+}
+
+.text-fail {
+    color: #FE2001;
+    font-size: 4em;
+    bottom: 90px;
+}
+
+.text-sucess {
+    color: #2EFF09;
+    font-size: 4em;
+    bottom: 90px;
+}
+
+.dice-numbers {
+    padding: 4px;
+    width: 100px;
+}
